@@ -1,0 +1,13 @@
+while True:
+    num1 = input("请输入数字1：")
+    num1 = float(num1)
+    num2 = input("请输入数字2：")
+    num2 = float(num2)
+    if num1 > 100 or num2 > 100:
+        print("您输入的数字有误，请重新输入")
+        continue
+    result = num1 + num2
+    print("您计算的结果是：", result)
+    isQ = input("您是否想要退出：（q：退出；其它：不退出）")
+    if isQ == 'q':
+        break
