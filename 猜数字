@@ -1,0 +1,13 @@
+num = 100.1
+count = 0
+while True:
+    count += 1
+    result = input("请输入一个数值：")
+    result = float(result)
+    if result == num:
+        print("恭喜你猜对了！答案就是：%d，你总共猜了%d次" % (result, count))
+        break
+    if result > num:
+        print("您输入的数据太大，请重新输入")
+    else:
+        print("您输入的数据太小，请重新输入")
