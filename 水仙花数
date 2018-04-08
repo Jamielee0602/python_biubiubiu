@@ -1,0 +1,14 @@
+while True:
+    num = input("请输入一个3位数值：")
+    num = int(num)
+    if not(100 <= num <= 999):
+        print("您输入的数据无效，程序退出")
+        exit()
+    hundreds = num // 100
+    tens = num % 100 // 10
+    units = num % 10
+    result = (hundreds ** 3 + tens ** 3 + units ** 3 == num)
+    if result:
+        print("%d是水仙花数" % num)
+    else:
+        print("%d不是水仙花数，请重新输入" % num)
