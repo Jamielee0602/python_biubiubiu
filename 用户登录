@@ -1,0 +1,13 @@
+user = "xxx"
+password = "ooo"
+while True:
+    u = input("请输入用户名：")
+    p = input("请输入密码：")
+    if u == user and p == password:
+        print("登录成功！")
+        break
+    if u != user:
+        notice = "用户名错误，请重新输入用户名："
+    elif p != password:
+        notice = "密码名错误，请重新输入密码："
+    print(notice)
