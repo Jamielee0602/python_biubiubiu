@@ -1,0 +1,9 @@
+num = 10
+print(id(num))
+num = 20
+print(id(num))
+
+num = [1, 2, 3]
+print(num, id(num))
+num.append(4)
+print(num, id(num))
